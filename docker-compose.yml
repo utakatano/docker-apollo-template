@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  develop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./fullstack-tutorial:/fullstack-tutorial
+    ports:
+      - '8080:4000'
+    tty: true
